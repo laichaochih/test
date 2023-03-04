@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "nothing" << endl;
+    cout << "nothing is real" << endl;
     for(int x = 0 ; x < 10 ; x++)
     {
         cout << x << endl;
