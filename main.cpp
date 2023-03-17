@@ -4,10 +4,46 @@ using namespace std;
 
 int main()
 {
-    cout << "nothing is real" << endl;
-    for(int x = 0 ; x < 20 ; x++)
+    int a = 4, b = 4;
+    char move;
+    char xy[10][10];
+    for(int i = 0; i < 10; i++)
     {
-        cout << x << endl;
+        for(int p = 0; p < 10; p++)
+        {
+            xy[p][i] = '0';
+        }
+
     }
+    xy[a][b] = '*';
+    for(int i = 0; i < 10; i++)
+    {
+        for(int p = 0; p < 10; p++)
+        {
+            cout << xy[i][p];
+        }
+        cout << endl;
+    }
+
+    while(1)
+    {
+        cin >> move;
+        if(move == 'w')
+        {
+            xy[a][b] = '0';
+            a--;
+            xy[a][b] = '*';
+            for(int i = 0; i < 10; i++)
+            {
+                for(int p = 0; p < 10; p++)
+                {
+                    cout << xy[i][p];
+                }
+                cout << endl;
+            }
+        }
+
+    }
+
     return 0;
 }
