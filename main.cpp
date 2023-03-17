@@ -42,6 +42,47 @@ int main()
                 cout << endl;
             }
         }
+        if(move == 'a')
+        {
+            xy[a][b] = '0';
+            b--;
+            xy[a][b] = '*';
+            for(int i = 0; i < 10; i++)
+            {
+                for(int p = 0; p < 10; p++)
+                {
+                    cout << xy[i][p];
+                }
+                cout << endl;
+            }
+        }
+        if(move == 's')
+        {
+            xy[a][b] = '0';
+            a++;
+            xy[a][b] = '*';
+            for(int i = 0; i < 10; i++)
+            {
+                for(int p = 0; p < 10; p++)
+                {
+                    cout << xy[i][p];
+                }
+                cout << endl;
+            }
+        }if(move == 'd')
+        {
+            xy[a][b] = '0';
+            b++;
+            xy[a][b] = '*';
+            for(int i = 0; i < 10; i++)
+            {
+                for(int p = 0; p < 10; p++)
+                {
+                    cout << xy[i][p];
+                }
+                cout << endl;
+            }
+        }
 
     }
 
