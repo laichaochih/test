@@ -69,7 +69,8 @@ int main()
                 }
                 cout << endl;
             }
-        }if(move == 'd')
+        }
+        if(move == 'd')
         {
             xy[a][b] = '0';
             b++;
